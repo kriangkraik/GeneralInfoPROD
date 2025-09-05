@@ -1,0 +1,36 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="GeneralInfo" targetNamespace="GeneralInfo"
+	elementFormDefault="qualified">
+
+	<xs:element name="GetGeneralInfoRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="TOKENCODE" type="xs:string" />
+				<xs:element name="CLAIMNO" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="GetGeneralInfoResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="CLAIMNO" type="xs:string" />
+				<xs:element name="POLICYNO" type="xs:string" />
+				<xs:element name="CPOLICYNO" type="xs:string" />
+				<xs:element name="INSURANCETYPE" type="xs:string" />
+				<xs:element name="CLAIMNOTINO" type="xs:string" />
+				<xs:element name="INSUREDNAME" type="xs:string" />
+				<xs:element name="CREATEDDATE" type="xs:string" />
+				<xs:element name="CREATEDTIME" type="xs:string" />
+				<xs:element name="COSI" type="xs:string" />
+				<xs:element name="DATEOFLOSS" type="xs:string" />
+				<xs:element name="TIMEOFLOSS" type="xs:string" />
+				<xs:element name="INFORMERNAME" type="xs:string" />
+				<xs:element name="ERRORCODE" type="xs:string" />
+				<xs:element name="ERRORMESSAGE" type="xs:string" />
+				<xs:element name="CARTHIRDPARTY" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>
